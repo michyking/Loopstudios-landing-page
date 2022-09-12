@@ -1,4 +1,8 @@
 :root{
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%);
+    --Dark-Gray: hsl(0, 0%, 55%);
+    --Very-Dark-Gray: hsl(0, 0%, 41%);
     
 }
 
@@ -7,4 +11,56 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    font-size: 15px;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Alata', sans-serif;
+}
+
+p{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* ==============creations section============ */
+
+.michael-creations-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem 8rem 3rem 8rem;
+}
+
+.michael-creations-heading h2{
+    font-size: 40px;
+}
+
+.michael-creations-heading p{
+    font-size: 20px;
+    border: 1px solid var(--Black);
+    padding: 0.2rem 1rem;
+}
+
+.michael-creations-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 6rem;
+}
+
+.creations-div img {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.creations-div h3{
+    text-transform: uppercase;
+    color: var(--Dark-Gray);
+    font-size: 2rem;
+    /* position: absolute;
+    bottom: 10px; */
 }
