@@ -45,22 +45,105 @@ p{
 }
 
 .michael-creations-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 0 6rem;
+    margin: 4rem 7rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
 }
 
-.creations-div img {
-    position: relative;
-    margin-bottom: 2rem;
+.michael-creations-container > div {
+    height: 450px;
+    width: 256px;
+}
+
+.bg1{
+    background-image: url(../images/desktop/image-deep-earth.jpg);
+    background-size: cover;
+}
+
+.bg2{
+    background-image: url(../images/desktop/image-night-arcade.jpg);
+    background-size: cover;
+}
+
+.bg3{
+    background-image: url(../images/desktop/image-soccer-team.jpg);
+    background-size: cover;
+}
+
+.bg4{
+    background-image: url(../images/desktop/image-grid.jpg);
+    background-size: cover;
+}
+
+.bg5{
+    background-image: url(../images/desktop/image-from-above.jpg);
+    background-size: cover;
+}
+
+.bg6{
+    background-image: url(../images/desktop/image-pocket-borealis.jpg);
+    background-size: cover;
+}
+
+.bg7{
+    background-image: url(../images/desktop/image-curiosity.jpg);
+    background-size: cover;
+}
+
+.bg8{
+    background-image: url(../images/desktop/image-fisheye.jpg);
+    background-size: cover;
 }
 
 .creations-div h3{
     text-transform: uppercase;
-    color: var(--Dark-Gray);
-    font-size: 2rem;
-    /* position: absolute;
-    bottom: 10px; */
+    color: rgb(235, 232, 232);
+    font-size: 1.1rem;
+    margin: 22rem 0 0 2rem;
+    letter-spacing: 0.3rem;
+    font-weight: 300;
+}
+
+
+/* Footer section ================ */
+
+footer{
+    background-color: var(--Black);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 7rem;
+}
+
+.footer-items h2{
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.footer-items ul li{
+    list-style: none;
+    display: inline;
+}
+
+.footer-items ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    margin-right: 0.7rem;
+
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+}
+
+.footer-icons img{
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-left: 1rem;
 }
